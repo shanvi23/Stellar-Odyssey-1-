@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" />
+  <link href="random.css" rel="stylesheet">
+  <script src="random.js">
+  </script>
+</head>
+
+<body class="page">
+
+  <!--header section-->
+  <header>
+
+    <a href="index.html" class="logo"><i class="fas fa-star"></i>Stellar Odyssey</a>
+
+    <nav class="navbar">
+      <a href="#speciality">Zodiac Signs</a>
+      <a href="#popular">Astro Sightings</a>
+      <a href="zodic.html"> Your Sign </a>
+      <a href="random.html">Personality Constellation</a>
+      <a href="#question">Questions?</a>
+
+    </nav>
+
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <form action="index.html" method="post">
+          <h1> Find your Constellation! </h1>
+
+          <fieldset>
+
+            <legend><span class="number"></span> Your Basic Info</legend>
+
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="user_name">
+
+            <label for="email">Last Name:</label>
+            <input type="email" id="mail" name="user_email">
+
+            <label>Gender:</label>
+            <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13"
+              class="light">Female</label><br>
+            <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13"
+              class="light">Male</label><br>
+            <input type="radio" id="g" value="g" name="user_age"><label for="g" class="light">Rather Not Say</label>
+          </fieldset>
+
+          <fieldset>
+
+            <legend><span class="number"></span> Your Profile</legend>
+
+            <label for="job">Hobbies:</label>
+            <select id="job" name="user_job">
+              <optgroup label="Art">
+                <option value="php_developer">Drawing</option>
+                <option value="python_developer">Painting</option>
+                <option value="rails_developer">Singing</option>
+                <option value="web_designer">Dancing</option>
+                <option value="wordpress_developer">Writing</option>
+                <option value="wordpress_developer">Cooking</option>
+                <option value="wordpress_developer">Card Making</option>
+
+              </optgroup>
+              <optgroup label="Sports">
+                <option value="android_developer">Swimming</option>
+                <option value="ios_developer">Running</option>
+                <option value="mobile_designer">Soccer</option>
+                <option value="mobile_designer">Football</option>
+                <option value="mobile_designer">Tennis</option>
+                <option value="mobile_designer">Bowling</option>
+                <option value="mobile_designer">Badminton</option>
+                <option value="mobile_designer">Basketball</option>
+                <option value="mobile_designer">Volleyball</option>
+                <option value="mobile_designer">Other</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="business_owner">Sleeping</option>
+                <option value="freelancer">Watching TV</option>
+                <option value="freelancer">Gardening</option>
+                <option value="freelancer">Travelling</option>
+                <option value="freelancer">Cleaning</option>
+                <option value="freelancer">Crocheting</option>
+                <option value="freelancer">Volunteering</option>
+                <option value="freelancer">Exercising</option>
+                <option value="freelancer">Photography</option>
+              </optgroup>
+            </select>
+
+            <label>Favorite shade of color: </label>
+            <input type="checkbox" id="development" value="interest_development" name="user_interest"><label
+              class="light" for="development">Red</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light"
+              for="design">Orange</label><br>
+            <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light"
+              for="business">Yellow</label><br>
+
+            <input type="checkbox" id="green" value="interest_green" name="user_interest"><label class="light"
+              for="green">Green</label><br>
+            <input type="checkbox" id="blue" value="interest_blue" name="user_interest"><label class="light"
+              for="blue">Blue</label><br>
+            <input type="checkbox" id="purple" value="interest_purple" name="user_interest"><label class="light"
+              for="purple">Purple</label><br>
+            <input type="checkbox" id="black" value="interest_black" name="user_interest"><label class="light"
+              for="black">Black</label><br>
+            <input type="checkbox" id="white" value="interest_white" name="user_interest"><label class="light"
+              for="white">White</label><br><br>
+
+            <label>What is your favorite season? </label>
+            <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13"
+              class="light">Summer</label><br>
+            <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13"
+              class="light">Winter</label><br>
+            <input type="radio" id="g" value="g" name="user_age"><label for="g" class="light">Spring</label><br>
+            <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13"
+              class="light">Fall/Autumn</label><br><br>
+
+
+            <label>Favorite genre for movies/books: </label>
+            <input type="checkbox" id="development" value="interest_development" name="user_interest"><label
+              class="light" for="development">Horror</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light"
+              for="design">Rom Com</label><br>
+            <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light"
+              for="business">Fantasy</label><br>
+
+            <input type="checkbox" id="green" value="interest_green" name="user_interest"><label class="light"
+              for="green">Action</label><br>
+            <input type="checkbox" id="blue" value="interest_blue" name="user_interest"><label class="light"
+              for="blue">Drama</label><br>
+            <input type="checkbox" id="purple" value="interest_purple" name="user_interest"><label class="light"
+              for="purple">Sci-Fi</label><br>
+            <input type="checkbox" id="black" value="interest_black" name="user_interest"><label class="light"
+              for="black">Mystery</label><br>
+            <input type="checkbox" id="white" value="interest_white" name="user_interest"><label class="light"
+              for="white">Musicals</label><br><br>
+
+            <label for="job">What kind of music do you like? </label>
+            <select id="job" name="user_job">
+              <option value="php_developer">Pop</option>
+              <option value="python_developer">Rock</option>
+              <option value="rails_developer">Jazz</option>
+              <option value="web_designer">Blues</option>
+              <option value="wordpress_developer">Hip Hop</option>
+              <option value="wordpress_developer">EDM</option>
+              <option value="wordpress_developer">Classical</option>
+              <option value="wordpress_developer">R&B</option>
+              <option value="wordpress_developer">Punk</option>
+              <option value="wordpress_developer">Folk</option>
+              <option value="wordpress_developer">Opera</option>
+              <option value="wordpress_developer">Instrumental</option>
+              <option value="wordpress_developer">K-pop</option>
+            </select>
+
+          </fieldset>
+          <div id="container">
+            <div id="inner_container">
+              <img id="image_shower" />
+            </div>
+            <div id="button_container">
+              <button onclick="get_random_image()"> <i class="fas fa-random"></i> </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+
+</html>

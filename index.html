@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stellar Odyssey</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!--header section-->
+  <header>
+
+    <a href="index.html" class="logo"><i class="fas fa-star"></i>Stellar Odyssey</a>
+
+    <nav class="navbar">
+      <a href="#speciality">Zodiac Signs</a>
+      <a href="#popular">Astro Sightings</a>
+      <a href="zodic.html"> Your Sign </a>
+      <a href="random.html">Personality Constellation</a> 
+      <a href="#question">Questions?</a>
+
+    </nav>
+
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <section id="container">
+    <div class="container">
+      <div class="slider-wrapper">
+        Astronomy and Space are
+        <div class="slider">
+          <div class="text1">intriguing</div>
+          <div class="text2">complex</div>
+          <div class="text3">mysterious</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slideshow container */ -->
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0rem;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+  </style>
+  </head>
+
+  <body>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="ahsan-avi-t9sr43kuJN0-unsplash.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="andy-holmes-rCbdp8VCYhQ-unsplash (1).jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="hdhdhd.avif" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="vincentiu-solomon-ln5drpv_ImI-unsplash.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="15.jpeg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--specality section-->
+    <section class="speciality" id="speciality">
+
+      <h1 class="heading">Zodiac<span> Signs</span> </h1>
+
+      <div class="box-container">
+
+        <div class="box">
+          <img class="image" src="aries-g3be1596af_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Aries</h3>
+            <p>Aries is the first sign of the zodiac and is associated with passion and confidence. People born under this sign are natural leaders who enjoy challenges and competition.Aries individuals are known for their quick thinking and impulsive decision-making skills.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="bull-g384c4b2db_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Tauraus</h3>
+            <p>Taurus is associated with stability and sensuality. People born under this sign are known for their practical and reliable nature, as well as their love of luxury. Tauruses are hard-working and enjoy the finer things, but can sometimes be stubborn and possessive. 
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="twins-g17b703626_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Gemini</h3>
+            <p>Gemini is an air sign represented by the twins, which reflects their dualistic nature. People born under this sign are adaptable, curious, and love to communicate. They are known for their versatility, quick wit, and ability to think on their feet. 
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="cancer-g2402a89a3_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Cancer</h3>
+            <p>Cancer is a water sign associated with emotions and intuition. People born under this sign are known for their sensitivity and nurturing nature, as well as their deep connections to family and home. 
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="lion-g77c3dfd13_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Leo</h3>
+            <p>Leo is a passionate and fiery sign associated with creativity, confidence, and leadership. Those born under this sign are often dynamic and charismatic, with a natural flair for the dramatic. 
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="virgin-g3f82524f5_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Virgo</h3>
+            <p>Virgo is an earth sign associated with practicality and attention to detail. People born under this sign are known for their analytical and organized nature, as well as their desire for cleanliness and order. 
+
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="libra-g42afd5b2f_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Libra</h3>
+            <p>Libra is an air sign associated with balance and harmony. People born under this sign are known for their diplomacy and charm, as well as their love of beauty and aesthetics. Libra individuals are often seen as gracious and fair-minded, but can sometimes be indecisive and avoidant of conflict. 
+
+</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="scorpio-g5b85b4a73_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Scorpio</h3>
+            <p>Scorpio is associated with passion and intensity. People born under this sign are known for their mysterious and magnetic nature, and their deep emotions. People born under this sign are known for their depth and complexity, as well as their ability to navigate the darker aspects of life. </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="contactors-g2e253e3ce_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Sagittarius</h3>
+            <p>Sagittarius is a free-spirited and adventurous sign known for their optimism, curiosity, and love of exploration. Those born under this sign value independence and personal growth, and are not afraid to take risks in order to achieve their goals. However, sometimes they can be tactless and blunt.
+
+
+ 
+</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="capricorn-g1675293b1_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Capricorn</h3>
+            <p>Capricorn is an earth sign associated with discipline and ambition. People born under this sign are known for their practical and responsible nature, as well as their desire for success and status. </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="aquarius-g531568be5_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Aquarius</h3>
+            <p>Aquarius is an air sign associated with innovation and humanitarianism. People born under this sign are known for their progressive and unconventional nature, as well as their desire for social justice and equality.  </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="fishes-gf635677b7_1920.jpg" alt="">
+          <div class="content">
+            <img src="Screen Shot 2023-03-04 at 8.01.29 PM.png" alt="">
+            <h3>Pisces</h3>
+            <p>Pisces is an emotional and compassionate water sign associated with imagination and intuition. Those born under this sign are known for their sensitivity and artistic nature, often expressing themselves through various creative outlets. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+
+      <div class="more-info">
+        <h2 class="title">
+          <span class="title-word title-word-1">Learn</span>
+          <span class="title-word title-word-2">more</span>
+          <span class="title-word title-word-3">about</span>
+          <span class="title-word title-word-4">signs</span>
+          <span class="title-word title-word-5">at</span>
+          <a href="https://www.britannica.com/topic/zodiac" target="_blank">Britannica!</a>
+
+        </h2>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <section class="popular" id="popular">
+        <h1 class="heading">Astro<span> Sighting </span></h1>
+
+        <div class="box-container">
+          <div class="box">
+            <span onclick= "window.location='https://calendar.google.com/calendar/u/0/r/eventedit/N2dhbzNjMDk0NnJwZXBtbWJ1ZWowc2tyZGMgc2hhbnZpLnh5ekBt'" class="price" > Add </span>
+            <img src="pl.jpeg" alt="">
+            <h3>Planets Align</h3>
+            <div class="name">
+              <h6> June 24th </h6>
+            </div>
+            <a href="https://www.calendar.com/blog/6-astronomical-events-to-add-to-your-calendar/" target="_blank" class="btn"> Learn More! </a>
+          </div>
+
+          <div class="box">
+            <span class="price" onclick= "window.location='https://calendar.google.com/calendar/u/0/r/eventedit/NDlwNXBlYWUycm9vMmM5MXVrMjVjazEwczcgc2hhbnZpLnh5ekBt'"> Add </span>
+            <img src="photo-1534190938029-2d03c3bec5fe.jpeg" alt="">
+            <h3>Southern Delta Meteor Shower</h3>
+            <div class="name">
+              <h6> July 28 – August 9</h6>
+            </div>
+            <a href="https://www.calendar.com/blog/6-astronomical-events-to-add-to-your-calendar/" target="_blank" class="btn">
+              Learn More! </a>
+          </div>
+
+          <div class="box">
+            <span class="price" onclick= "window.location='https://calendar.google.com/calendar/u/0/r/eventedit/M2w1M203M2MyamRpZTVpMm9oYzRzdGpyOWYgc2hhbnZpLnh5ekBt'"> Add </span>
+            <img src="pia21974.jpeg" alt="">
+            <h3>Jupiter Opposition</h3>
+            <div class="name">
+              <h6> September 26 </h6>
+            </div>
+            <a href="https://www.calendar.com/blog/6-astronomical-events-to-add-to-your-calendar/" target="_blank" class="btn">
+              Learn More! </a>
+          </div>
+
+          <div class="box">
+            <span class="price" onclick= "window.location='https://calendar.google.com/calendar/u/0/r/eventedit/NHZtbHBkdDAwc2JjZGNjMWJkZzdrcDhlcjEgc2hhbnZpLnh5ekBt'"> Add </span>
+            <img src="Screen Shot 2023-03-04 at 10.34.24 PM.png" alt="">
+            <h3> Northern Taurid Meteor Shower</h3>
+            <div class="name">
+              <h6> November 11-November 12 </h6>
+            </div>
+            <a href="https://www.calendar.com/blog/6-astronomical-events-to-add-to-your-calendar/" target="_blank" class="btn">
+              Learn More! </a>
+          </div>
+
+          <div class="box">
+            <span class="price" onclick= "window.location='https://calendar.google.com/calendar/u/0/r/eventedit/MThpMDkwczBjcDJja2M0NDZvZGdjZ21ybWsgc2hhbnZpLnh5ekBt'"> Add </span>
+            <img src="istockphoto-1053794310-170667a.jpeg" alt="">
+            <h3>Mars Opposition</h3>
+            <div class="name">
+              <h6> December 8th </h6>
+            </div>
+            <a href="https://www.calendar.com/blog/6-astronomical-events-to-add-to-your-calendar/" target="_blank" class="btn">
+              Learn More! </a>
+          </div>
+
+          <div class="box">
+            <span class="price" onclick= "window.location='https://calendar.google.com/calendar/u/0/r/eventedit/MnFrNDZwdTZydm9zZjJyOTJ1NXN0cGNndGYgc2hhbnZpLnh5ekBt'"> Add </span>
+            <img src="Screen Shot 2023-03-04 at 10.43.06 PM.png" alt="">
+            <h3>First Supermoon</h3>
+            <div class="name">
+              <h6> June 14th </h6>
+            </div>
+            <a href="https://www.calendar.com/blog/6-astronomical-events-to-add-to-your-calendar/" target="_blank" class="btn">
+              Learn More! </a>
+          </div>
+
+        </div>
+      </section>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <section id="question">
+        <div class="bar">
+          <h2 class="search-header"> Have more questions? Search here --> and we'll direct you to Google! </h2>
+          <form action="https://www.google.com/search" method="get" class="search-bar">
+            <input type="text" placeholder="search anything related to space!" name="q">
+            <button type="submit"></button>
+          </form>
+        </div>
+      </section>
+
+
+
+      <script src="script.js"></script>
+  </body>
+
+</html>

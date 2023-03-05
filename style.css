@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;600&display=swap');
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+  margin:0; padding:0; 
+  box-sizing: border-box; 
+  outline: none; border:none;
+  text-transform: capitalize;  
+  transition: all .2s linear; 
+  line-height: 1.8; 
+  
+}
+
+*::selection{
+  background: var(--red); 
+  color: #fff; 
+  
+} 
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body{
+  background: #f7f7f7; 
+} 
+
+section{
+  padding: 2rem 9%;
+} 
+
+.heading{
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: #666;
+}
+
+.heading span{
+  color:#040461;
+}
+
+.btn{
+  display: inline-block; 
+  padding: .8rem 3rem; 
+  border: .2rem solid  #040461;
+  color:#040461;
+  cursor: pointer; 
+  font-size: 1.7rem; 
+  border-radius: .5rem; 
+  position: relative; 
+  overflow: hidden; 
+  z-index: 0; 
+  margin-top: 1rem;
+} 
+
+
+header{
+  position: fixed; 
+  top:0; left: 0; right: 0; 
+  z-index: 1000; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff; 
+  padding: 2rem 9%;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+  font-size: 2.5rem; 
+  font-weight: bolder;
+  color:  #666; 
+  
+}
+
+header .logo i{
+  padding-right: .5rem;
+  color:#040461; 
+  
+}
+
+header .navbar a{
+  font-size: 2rem; 
+  margin-left: 2rem; 
+  color: #666; 
+}  
+
+header .navbar a:hover{
+  color:#040461);
+}
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh; 
+  align-items: center;
+  background: url(../images/home-bg.jpg) no-repeat; 
+  background-size: cover; 
+  background-position: center;
+  
+} 
+
+.home .content{
+  flex: 1 1 40rem; 
+  padding-top: 6.5rem;
+}
+
+.home .image{
+  flex: 1 1 40rem; 
+}
+
+.home .image img{
+  width:70%;
+  padding:1rem; 
+  animation:float 3s linear infinite;
+} 
+
+@keyframes float{
+  0% 100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(3rem);
+  }
+}
+
+.home .content h3{
+  font-size: 5rem; 
+  color:#040461; 
+}
+
+.home .content p{
+  font-size: 1.7rem; 
+  color: #666; 
+  padding: 1rem 0; 
+}
+
+.speciality .box-container{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.5rem; 
+  
+}
+
+.speciality .box-container .box{
+  flex: 1 1 30rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.speciality .box-container .box .image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+
+.speciality .box-container .box .content{
+  text-align: center;
+  background: #A7C7E7;
+  padding: 2rem;
+}
+
+.speciality .box-container .box .content img{
+  margin: 1.5rem 0;
+}
+
+.speciality .box-container .box .content h3{
+  font-size: 3rem; 
+  color:#fff;  
+  font-weight: 300;
+}
+
+.speciality .box-container .box .content p{
+  font-size: 1.6rem; 
+  color: #040461;
+  padding: 1rem 0;
+  font-weight: 300;
+}
+
+.speciality .box-container .box:hover .image{
+  top:0; 
+}
+
+.speciality .box-container .box:hover .content{ 
+  transform: translateY(100%)
+}
+
+.heading{
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s  infinite;
+  animation-iteration-count: infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 35% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+.popular .box-container{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.5rem;
+}
+
+.popular .box-container .box{
+  padding: 1.3rem; 
+  background: #fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border: .1rem solid rgba(0,0,0,.3);
+  border-radius: .5rem;
+  text-align: center;
+  flex: 1 1 30rem;
+  position: relative;
+}
+
+.popular .box-container .box img{
+  height: 40rem;
+  object-fit: cover;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.popular .box-container .box .price{
+  position: absolute;
+  top: 3rem; left:3rem; 
+  background: rgba(4, 4, 97, 0.8); 
+  color: #fff; 
+  font-size: 2rem; 
+  padding: 5rem 1rem; 
+  border-radius: .5rem; 
+  
+}
+
+.popular .box-container .box h3{
+  color: #040461; 
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  
+} 
+
+.name{
+  color: #333; 
+  font-size: 2.5rem;
+  
+} 
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Labrada', serif;
+
+}
+
+.slider-wrapper {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  height: 50px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.slider > div {
+  box-sizing: border-box;
+  color: #FFF;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.text1 {
+  background-color: #f4b8b8;
+  animation: slide 5s linear infinite;
+}
+
+.text2 {
+  background-color: #ffcd94;
+}
+
+.text3 {
+  background-color: #cfadeb;
+}
+
+
+@keyframes slide {
+  0% { margin-top: -300px; }
+  5% { margin-top: -200px; }
+  33% { margin-top: -200px; }
+  38% { margin-top: -100px; }
+  66% { margin-top: -100px; }
+  72% { margin-top: -0; }
+  100% { margin-top: 0; }
+}
+
+.bar {
+  width:100%; 
+  min-height: 50vh;
+  padding: 2%; 
+  background-image: linear-gradient(rgba(102, 110, 140),rgba(102, 110, 140)), url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar{
+  width: 100%;
+  max-width: 700px;
+  background: rgba(2, 14, 56,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  padding: 24px 20px;
+  color:#fff; 
+}
+
+::placeholder{
+  color: #fff; 
+} 
+
+.search-bar button{
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #020969;
+  cursor:pointer;
+}
+
+.search-header{
+  text-align: center; 
+  color: #e1e4ed; 
+  font-size: 2.5rem; 
+  padding: 2.5rem;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+} 
+
+.title-word-5 {
+  --color-1: #E4A9A8;
+  --color-2: #3D8DAE;
+  --color-3: #DBAD4A;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.more-info {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 800;
+  font-size: 3vw;
+}
+
+
